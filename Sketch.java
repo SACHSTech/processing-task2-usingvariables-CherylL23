@@ -6,6 +6,7 @@ public class Sketch extends PApplet {
 
    //size of the picture
     size(400, 400);
+  }
   
   public void setup() {
     
