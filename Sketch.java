@@ -3,7 +3,7 @@ import processing.core.PApplet;
 public class Sketch extends PApplet {
   
   public void settings() {
-
+    
    // size of the picture
     size(400, 400);
   }
