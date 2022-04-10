@@ -1,36 +1,45 @@
 import processing.core.PApplet;
 
 public class Sketch extends PApplet {
-	
-	
-  /**
-   * Called once at the beginning of execution, put your size all in this method
-   */
+  
   public void settings() {
-	// put your size call here
+    
+   // size of the picture
     size(400, 400);
   }
-
-  /** 
-   * Called once at the beginning of execution.  Add initial set up
-   * values here i.e background, stroke, fill etc.
-   */
-  public void setup() {
-    background(210, 255, 173);
-  }
-
-  /**
-   * Called repeatedly, anything drawn to the screen goes here
-   */
-  public void draw() {
-	  
-	// sample code, delete this stuff
-    stroke(128);
-    line(150, 25, 270, 350);  
-
-    stroke(255);
-    line(50, 125, 70, 50);  
-  }
   
-  // define other methods down here.
+  public void setup() {
+    
+    // background coloring
+    background(0, 210, 252);
+  }
+ 
+  public void draw() {
+
+    // sun
+    fill(240, 252, 0);
+    ellipse((float) (width * 0.175), (float) (height * 0.175), (float) (width * 0.25), (float) (height * 0.25));
+
+    // house
+    fill(207, 76, 33);
+    triangle((float) (width * 0.25), (float) (height * 0.5), (float) (width * 0.75), (float) (height * 0.5), (float) (width * 0.5), (float) (height * 0.25));
+
+    fill(240, 235, 182);
+    rect((float) (width * 0.25), (float) (height * 0.5), (float) (width * 0.5), (float) (height * 0.375));
+
+    // ground
+    fill(31, 191, 76);
+    rect((float) (width * 0), (float) (height * 0.85), (float) (width), (float) (height));
+
+    // door an doorknob
+    fill(82, 79, 53);
+    rect((float) (width * 0.475), (float) (height * 0.575), (float) (width * 0.2), (float) (height * 0.275));
+
+    fill(240, 252, 0);
+    ellipse((float) (width * 0.6375), (float) (height * 0.75), (float) (width * 0.0375), (float) (height * 0.0375));
+    
+    // windows
+    fill(145, 229, 242);
+   rect((float) (width * 0.275), (float) (height * 0.575), (float) (width * 0.175), (float) (height * 0.15));
+    }
 }

@@ -2,7 +2,7 @@ import processing.core.PApplet;
 
 /**
  * Main class to execute sketch
- * @author 
+ * @Cheryl
  *
  */
 class Main {
@@ -12,5 +12,6 @@ class Main {
 	  Sketch mySketch = new Sketch();
 	  PApplet.runSketch(processingArgs, mySketch);
   }
+
   
 }
